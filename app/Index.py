@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.options import Options
 
 appPath = os.path.dirname(__file__)
 chromeOptions = Options()
-chromeOptions.add_argument('--headless')
+# chromeOptions.add_argument('--headless')
 chromeOptions.add_argument('--disable-gpu')
-chromeDriverPath = "";
+chromeDriverPath = ""
 if platform.system() == "Windows":
     chromeDriverPath = appPath + "/drivers/win32/chromedriver.exe"
 elif platform.system() == "Linux":
