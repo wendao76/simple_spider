@@ -4,3 +4,4 @@
 #依赖安装
 ## pip install selenium
 ## pip install pymysql
+## pip install sqlalchemy 
