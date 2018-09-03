@@ -6,8 +6,9 @@ Base = declarative_base()
 
 
 class BaseModel:
+
     @staticmethod
-    def __init__(self):
+    def initDb():
         mysql_egnine = create_engine("mysql+pymysql://root:root@10.5.15.208:3306/test", max_overflow=5)
         Base.metadata.create_all(mysql_egnine)
         Session = sessionmaker()
